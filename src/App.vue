@@ -1,4 +1,16 @@
 
 <template>
-  <h1>Hdssfdsf</h1>
+    <Header/>
+    <Main/>
+    <Footer/>
 </template>
+<script>
+    import Header from './components/Header/Header.vue';
+    import Main from './components/Main/Main.vue';
+    import Footer from './components/Footer/Footer.vue';
+    export default {
+        components:{
+            Header,Main,Footer
+        }
+    }
+</script>
