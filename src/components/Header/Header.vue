@@ -1,7 +1,13 @@
 <template>
-    <header>
+    <header class="w-full h-40.5 flex flex-col">
+        <Banner/>
     </header>
 </template>
 <script>
-    export default{}
+    import Banner from './Banner/Banner.vue'
+    export default{
+        components:{
+            Banner
+        }
+    }
 </script>
