@@ -9,7 +9,7 @@
     </section>
 </template>
 <script lang="ts">
-    import Symbol from '../../../assets/Symbol.svg'
+    import Symbol from '@assets/Symbol.svg'
     import NavMenu from './NavMenu.vue';
     export default{
         components:{

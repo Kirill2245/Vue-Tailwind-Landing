@@ -1,10 +1,12 @@
 <template>
     <section class="w-full flex flex-col">
         <HeroInfo/>
+        <HeroContainCard/>
     </section>
 </template>
 <script lang="ts">
-    import image from '../../../../assets/Image.png'
+    import image from '@assets/Container.jpg'
+    import HeroContainCard from './HeroContainCard/HeroContainCard.vue';
     import HeroInfo from './HeroInfo/HeroInfo.vue';
     export default{
         data(){
@@ -13,7 +15,8 @@
             }
         },
         components:{
-            HeroInfo
+            HeroInfo,
+            HeroContainCard
         }
     }
 </script>

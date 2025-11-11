@@ -4,25 +4,32 @@
             <InfoHeader/>
             <BtnContain :ListBtn="btnList"/>
             <div class="flex gap-5" role="list" aria-label="Company achievements and statistics">
-
+                <Card :cardList = "cardList"/>
             </div>
         </div>
     </section>
 </template>
 <script lang="ts">
     import BtnContain from './BtnContain.vue';
+    import Card from './Card.vue';
     import InfoHeader from './InfoHeader.vue';
     interface ListButton {
         name: string;
     }
+    interface ListCard {
+        count: number,
+        name: string
+    }
     export default{
         components:{
             BtnContain,
-            InfoHeader
+            InfoHeader,
+            Card
         },
         data(){
             return{
-                btnList:[{name:'Learn More'},{name:'Browse Properties'}] as ListButton[]
+                btnList:[{name:'Learn More'},{name:'Browse Properties'}] as ListButton[],
+                cardList:[{count:200, name:'Happy Customers'},{count:10000, name:'Properties For Clients'},{count:16, name:'Years of Experience'}] as ListCard[]
             }
         }
     }

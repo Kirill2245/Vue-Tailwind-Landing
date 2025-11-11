@@ -45,8 +45,8 @@
     </section>
 </template>
 <script>
-    import abstractDesign from '../../assets/AbstractDesign.svg'
-    import iconBtnClose from '../../assets/IconBtnClose.svg'
+    import abstractDesign from '@assets/AbstractDesign.svg'
+    import iconBtnClose from '@assets/IconBtnClose.svg'
     export default{
         data() {
             return {
