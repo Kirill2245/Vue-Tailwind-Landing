@@ -4,8 +4,8 @@
         <NavigationBar/>
     </header>
 </template>
-<script>
-    import Banner from './Banner/Banner.vue'
+<script lang="ts">
+    import Banner from './Banner.vue'
     import NavigationBar from './NavigationBar/NavigationBar.vue';
     export default{
         components:{
